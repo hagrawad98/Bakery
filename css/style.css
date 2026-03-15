@@ -1,0 +1,658 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+header {
+  background:
+    url(../img/banner-bg.jpg),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-blend-mode: overlay;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+}
+.top-nav .container {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  color: #f3f3f3;
+  font-size: 15px;
+}
+.top-nav .container .contact,
+.top-nav .container .social {
+  margin-block: 5px;
+}
+.top-nav .container .contact span {
+  margin-right: 20px;
+}
+.top-nav .container .social a i {
+  padding-inline: 3px;
+  color: white;
+}
+.top-nav .container .social a i:hover {
+  color: #d1ab7e;
+}
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+nav .container {
+  background-color: white;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-size: 12px;
+  margin-top: 2px;
+}
+.navbar-toggler:focus{
+   /* border: none !important; */
+   box-shadow: none !important;
+}
+nav .container .menu ul {
+  list-style: none;
+  align-items: center;
+}
+nav .container .menu ul li {
+  text-transform: uppercase;
+}
+nav .container .menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+nav .container .menu ul li a:hover {
+  color: #d1ab7e;
+}
+header .hero {
+  margin: auto;
+  align-items: center;
+  width: 80%;
+  text-align: center;
+}
+header .hero .hero-content {
+  color: white;
+  padding-block: 7%;
+}
+header .hero .hero-content .subtitle {
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: "poppins-light";
+}
+header .hero .hero-content h1 {
+  font-size: 72px;
+  font-weight: 700;
+  position: relative;
+  margin-block: 15px;
+  font-family: "poppins";
+}
+header .hero .hero-content h1::before {
+  content: "";
+  height: 0.8px;
+  width: 100%;
+  background-color: #d1ab7e;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+header .hero .hero-content h1::after {
+  content: "";
+  height: 0.8px;
+  width: 100%;
+  background-color: #d1ab7e;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+header .hero .hero-content .desc {
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "poppins-light";
+  margin: auto;
+  width: 80%;
+}
+header .hero .hero-content .btn {
+  padding: 10px 30px;
+  color: white;
+  background-color: #d1ab7e;
+  margin-top: 17px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 3%;
+}
+header .hero .hero-content .btn:hover {
+  background-color: transparent;
+  border: 1px solid white;
+}
+/* about start */
+.about {
+  margin-block: 40px;
+}
+.about .about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about .about-content .about-text {
+  margin-left: 10%;
+}
+.about .about-content .about-text .about-title {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  font-family: "poppins";
+  color: #d1ab7f;
+  text-transform: uppercase;
+}
+.about .about-content .about-text h2 {
+  font-size: 31px;
+  font-weight: 600;
+  font-family: "poppins";
+  margin-bottom: 20px;
+}
+.about .about-content .about-text .p1 {
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "poppins-light";
+  margin-bottom: 10px;
+}
+.about .about-content .about-text .p2 {
+  color: #77798d;
+  font-family: "poppins-light";
+  margin-bottom: 20px;
+}
+.about .about-content .about-text button {
+  padding: 15px 25px;
+  color: rgba(255, 255, 255, 0.852);
+  background-color: #d1ab7e;
+  border: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 300;
+}
+.about .about-content .about-text button:hover {
+  background-color: transparent;
+  border: 1px solid #d1ab7e;
+  color: #d1ab7e;
+}
+/* Category start */
+.Category {
+  padding-block: 7%;
+  background-color: #f9f9ff;
+}
+.Category .container h2 {
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "poppins";
+}
+.Category .container p {
+  margin-block: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  font-family: "poppins-light";
+  color: #a3a4a3;
+}
+.Category .container .Category-img {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Category .container .Category-img .img-box {
+  width: 25%;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
+  font-family: "poppins";
+  font-size: 14px;
+  font-weight: 300;
+}
+.Category .container .Category-img .img-box img {
+  margin-bottom: 10px;
+  border-radius: 50% 50%;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-border-radius: 50% 50%;
+  -moz-border-radius: 50% 50%;
+  -ms-border-radius: 50% 50%;
+  -o-border-radius: 50% 50%;
+}
+.Category .container .Category-img .img-box:hover img {
+  transform: scale(1.04);
+  -webkit-transform: scale(1.04);
+  -moz-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  -o-transform: scale(1.04);
+}
+.Category .container .Category-img .img-box .text:hover h3 {
+  color: #d1ab7f;
+}
+.Category .container button {
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+  padding: 15px 25px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.852);
+  background-color: #d1ab7e;
+  font-weight: 300;
+}
+.Category .container button:hover {
+  background-color: transparent;
+  border: 1px solid #d1ab7e;
+  color: #d1ab7e;
+}
+/* brand start */
+.brand {
+  margin-block: 50px;
+}
+.brand .brand-content {
+  display: flex;
+  align-items: center;
+}
+.brand .brand-title {
+  color: #d1ab7f;
+  text-transform: uppercase;
+  font-family: "poppins-light";
+  letter-spacing: 1px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.brand .brand-subtitle {
+  font-family: "poppins";
+}
+.brand .brand-video {
+  background: url(../img/video-bg.jpg);
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: none;
+  width: 60%;
+  height: 300px;
+}
+.brand .layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.184);
+  opacity: 1;
+  transition: all 1.4s ease-in-out;
+  -webkit-transition: all 1.4s ease-in-out;
+  -moz-transition: all 1.4s ease-in-out;
+  -ms-transition: all 1.4s ease-in-out;
+  -o-transition: all 1.4s ease-in-out;
+}
+.brand .layer img {
+  top: 45%;
+  position: relative;
+  left: 45%;
+}
+.brand .brand-content .brand-text p {
+  width: 90%;
+}
+.brand .brand-content .brand-text .p1 {
+  margin-block: 10px;
+}
+.brand .brand-content .brand-text .p2 {
+  color: #77798d;
+  margin-block: 20px;
+  width: 90%;
+  font-family: "poppins-light";
+  font-family: 12px;
+}
+.brand button {
+  display: block;
+  margin-top: 40px;
+  padding: 15px 25px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.852);
+  background-color: black;
+  font-weight: 300;
+}
+.brand button:hover {
+  background-color: transparent;
+  border: 1px solid #d1ab7e;
+  color: #d1ab7e;
+}
+/* review start */
+.review {
+  background:
+    url(../img/review-bg.jpg),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-blend-mode: overlay;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  padding-block: 20px;
+  color: #ffffff;
+  font-family: "poppins-light";
+}
+.review h1,
+.review .review-subtitle {
+  text-align: center;
+}
+.review h1 {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "poppins-normal";
+  margin-top: 10%;
+}
+.review .review-subtitle {
+  font-size: 14px;
+  font-weight: 300;
+  margin-block: 10px;
+}
+.review .review-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.review .stars {
+  margin-block: 17px;
+}
+.review .stars .name {
+  margin-right: 10%;
+  font-family: "poppins-normal";
+}
+.review .stars .star-color {
+  color: #ffa500;
+}
+.review p {
+  font-size: 15px;
+  width: 90%;
+}
+/* blog start */
+.blog {
+  padding-block: 7%;
+}
+.blog .container h2 {
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "poppins";
+}
+.blog .container .blog-title {
+  width: 75%;
+  font-size: 14px;
+  font-weight: 300;
+  margin-inline: auto;
+  text-align: center;
+  font-family: "poppins-light";
+  color: #a3a4a3;
+}
+.blog .container .blog-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.blog .container .blog-content .blog-img {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.blog .container .blog-content .blog-img img {
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+.blog .container .blog-content .blog-img:hover img {
+  transform: scale(1.04);
+  -webkit-transform: scale(1.04);
+  -moz-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  -o-transform: scale(1.04);
+}
+.blog .container .blog-content .blog-img {
+  position: relative;
+  width: 30%;
+}
+.blog .container .blog-content .blog-text {
+  margin-top: 20px;
+}
+.blog .container .blog-content .blog-img .img-review {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eeeeee;
+}
+.blog .container .blog-content .blog-img .img-review span {
+  font-size: 14px;
+  color: #a3a4a3;
+}
+.blog .container .blog-content .blog-img .img-review .blog-span {
+  color: #532222;
+  margin-right: 25%;
+}
+.blog .container .blog-content .blog-text .blog-p {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: "poppins";
+  text-transform: uppercase;
+}
+.blog .container .blog-content .blog-text p:last-of-type {
+  color: #77798d;
+  font-family: "poppins-light";
+  font-size: 12px;
+}
+.blog .container .blog-content .blog-text:hover .blog-p {
+  color: #d1ab7f;
+}
+/* footer start */
+footer {
+  background-color: #04091e;
+  color: #f7f3e2;
+  padding-block: 7%;
+}
+footer .container .text {
+  display: flex;
+  padding-block: 40px;
+  column-gap: 50px;
+  justify-content: space-between;
+}
+footer .container .text .text-box {
+  width: 34%;
+}
+footer .container .text .text-box h5 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-block: 20px;
+  font-family: "poppins-normal";
+}
+footer .container .text .text-box p {
+  font-size: 12px;
+  font-family: "poppins";
+  font-weight: 300;
+}
+
+footer .container .text .text-box .news-input {
+  position: relative;
+}
+
+footer .container .text .text-box .news-input .news-i {
+  position: absolute;
+  right: 7%;
+  top: 40%;
+  height: 30px;
+  width: 40px;
+  background-color: #d1ab7f;
+}
+footer .container .text .text-box .news-input .news-i i {
+  position: relative;
+  padding-left: 10px;
+  right: 0;
+  top: 10%;
+}
+footer .container .text .text-box .news-input input {
+  margin-top: 20px;
+  border: 1px solid rgba(147, 147, 147, 0.262);
+  width: 300px;
+  padding-left: 4px;
+  height: 30px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background-color: #f9f9ff;
+}
+footer .container .text .text-box .news-input input::placeholder {
+  color: #7b8b9a;
+  font-size: 12px;
+}
+footer .container .text .text-box .social-links {
+  display: flex;
+  margin-top: 20px;
+}
+footer .container .text .text-box .social-links a i {
+  color: #cccccc;
+  margin-right: 12px;
+  font-size: 12px;
+}
+footer .container .text .text-box .social-links a i:hover {
+  color: #d1ab7f;
+}
+footer .container span i,
+footer .container span .color {
+  color: #d1ab7f;
+}
+@media (max-width: 1000px) and (min-width: 450px) {
+  .top-nav .container {
+    font-size: 12px;
+  }
+  nav .container .menu .blog .sub-menu .sub-menu2 {
+    left: -68px;
+  }
+  header .hero .hero-content {
+    margin-block: 3%;
+  }
+  header .hero .hero-content h1 {
+    font-size: 30px;
+  }
+
+  header .hero .hero-content .subtitle {
+    font-size: 12px;
+  }
+
+  header .hero .hero-content .desc {
+    font-size: 13px;
+  }
+  header .hero .hero-content .btn {
+    padding: 10px 12px;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  nav .container {
+    width: 100%;
+    font-size: 10px;
+  }
+  nav img {
+    height: 60px;
+    width: 60px;
+  }
+  nav .container .menu ul li {
+    padding-inline: 5px;
+  }
+
+  .about .about-content .about-text {
+    margin-inline: 8%;
+  }
+  .about .about-content .about-text .about-title {
+    font-size: 12px;
+  }
+  .about .about-content .about-text button {
+    padding: 10px 12px;
+    font-size: 15px;
+  }
+  .about .about-content .about-img {
+    display: none;
+  }
+  .Category .container .Category-img {
+    display: block;
+  }
+  .Category .container .Category-img .img-box {
+    width: 100%;
+  }
+  .brand .brand-content {
+    display: block;
+  }
+  .brand .brand-video {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .review h1 {
+    font-size: 26px;
+  }
+  .review .review-box .review-none {
+    display: none;
+  }
+  .blog .container {
+    width: 90%;
+  }
+  .blog .container .blog-title {
+    width: 90%;
+  }
+  .blog .container .blog-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog .container .blog-content .blog-img {
+    width: 80%;
+    margin: auto !important;
+  }
+  .blog .container .blog-content .blog-img .blog-text {
+    margin-bottom: 20px;
+  }
+  footer .container {
+    width: 90%;
+  }
+  footer .container .text {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  footer .container .text .text-box {
+    width: 100%;
+  }
+  footer .container .text .text-box h5 {
+    font-size: 17px;
+    margin-block: 5px;
+  }
+  footer .container .text .text-box p {
+    font-size: 14px;
+  }
+  footer .container .text .text-box .news-input .news-i {
+    position: absolute;
+    right: 35%;
+  }
+  footer .container .text .text-box .news-input input {
+    width: 300px;
+  }
+  footer .container span {
+    font-size: 15px;
+  }
+}
